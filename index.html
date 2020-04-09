@@ -1,16 +1,18 @@
-
 <html>
-
 	<body>
-
-
-<style type='text/css'>
+		
+		<style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
 		background-color: #005290;
-		font-family: "Arial", sans-serif;
+		font-family: "Salesforce Sans", sans-serif;
 	}
 	.embeddedServiceHelpButton .helpButton .uiButton:focus {
 		outline: 1px solid #005290;
+	}
+	@font-face {
+		font-family: 'Salesforce Sans';
+		src: url('https://c1.sfdcstatic.com/etc/clientlibs/sfdc-aem-master/clientlibs_base/fonts/SalesforceSans-Regular.woff') format('woff'),
+		url('https://c1.sfdcstatic.com/etc/clientlibs/sfdc-aem-master/clientlibs_base/fonts/SalesforceSans-Regular.ttf') format('truetype');
 	}
 </style>
 
@@ -39,17 +41,17 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://legendboats.my.salesforce.com',
-			'https://support.legendboats.com/',
+			'https://brave-goat-275838-dev-ed.my.salesforce.com',
+			'https://gurinder-developer-edition.ap4.force.com/',
 			gslbBaseURL,
-			'00Di0000000aRhm',
-			'Legend_Customer_Support_LiveAgent',
+			'00D6F000001dd75',
+			'Ursa_Major_Solar_Chat_Agents',
 			{
-				baseLiveAgentContentURL: 'https://c.la1-c2-ord.salesforceliveagent.com/content',
-				deploymentId: '5721Y000000W7ew',
-				buttonId: '5731Y000000NaTb',
-				baseLiveAgentURL: 'https://d.la1-c2-ord.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I1Y000000blKCUAY_1713115ffea',
+				baseLiveAgentContentURL: 'https://c.la1-c2-ukb.salesforceliveagent.com/content',
+				deploymentId: '5726F000000Xf0M',
+				buttonId: '5736F000000XeZN',
+				baseLiveAgentURL: 'https://d.la1-c2-ukb.salesforceliveagent.com/chat',
+				eswLiveAgentDevName: 'Ursa_Major_Solar_Chat_Agents',
 				isOfflineSupportEnabled: true
 			}
 		);
@@ -57,7 +59,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://legendboats.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://brave-goat-275838-dev-ed.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
@@ -66,7 +68,6 @@
 		initESW('https://service.force.com');
 	}
 </script>
-
-</body>
-
+		
+	</body>
 </html>
